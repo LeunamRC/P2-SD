@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface LivroRepository extends MongoRepository<Livro, String> {
+public interface LivroRepository extends MongoRepository<Livro, Integer{
 }

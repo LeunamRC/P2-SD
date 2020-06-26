@@ -30,11 +30,13 @@ public class LivroService {
     public List<Livro> findAll(){
         return livroRepository.findAll();
     }
-    public Optional<Livro> findById(String id){
-        return livroRepository.findById(id);
+
+    public Optional<Livro> findById(String Id) {
+        return livroRepository.findById(Integer.parseInt(Id));
     }
-    public void delete(String id){
-        livroRepository.deleteById(id);
+
+    public void delete(String Id) {
+        livroRepository.deleteById(Integer.parseInt(Id));
     }
 
     public void deleteAll(){

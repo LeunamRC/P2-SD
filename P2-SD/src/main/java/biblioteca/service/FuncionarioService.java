@@ -30,11 +30,13 @@ public class FuncionarioService {
     public List<Funcionario> findAll(){
         return funcionarioRepository.findAll();
     }
-    public Optional<Funcionario> findById(String id){
-        return funcionarioRepository.findById(id);
+
+   public Optional<Funcionario> findById(String Id) {
+        return funcionarioRepository.findById(Integer.parseInt(Id));
     }
-    public void delete(String id){
-        funcionarioRepository.deleteById(id);
+
+    public void delete(String Id) {
+        funcionarioRepository.deleteById(Integer.parseInt(Id));
     }
 
     public void deleteAll(){
